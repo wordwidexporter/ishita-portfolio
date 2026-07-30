@@ -464,6 +464,9 @@ footer button{
   footer{ padding:40px 20px; }
   footer input{ min-width:0; flex:1 1 100%; }
   footer button{ flex:1 1 100%; }
+
+  .grid img, .grid .card{ min-height:200px !important; }
+  .mono-type img{ min-height:180px !important; }
 }
 
 @media (max-width:480px){
@@ -511,7 +514,7 @@ footer button{
 }
 
 .about-photo{
-  width:100%;
+  width:180px;
 }
 .about-photo img{
   width:100%;
