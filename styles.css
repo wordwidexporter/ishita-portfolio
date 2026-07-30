@@ -37,8 +37,10 @@ header{
   position:sticky; top:0; background:var(--bg); z-index:10;
 }
 header nav{display:flex; gap:22px;}
-header nav a{opacity:0.75;}
+header nav a{opacity:0.75; color:var(--ink); text-decoration:none;}
 header nav a:hover{opacity:1;}
+header > div:first-child{ font-weight:700; }
+header > div:first-child a{ color:var(--ink); text-decoration:none; }
 
 .intro{
   padding:60px 28px 40px;
@@ -412,15 +414,22 @@ footer button{
   header{
     flex-direction:column;
     align-items:flex-start;
-    gap:12px;
+    gap:0;
     padding:16px 20px;
+  }
+  header > div:first-child{
+    font-size:12.5px;
+    margin-bottom:14px;
   }
   header nav{
     display:flex;
     flex-wrap:wrap;
-    gap:14px 18px;
+    gap:10px 20px;
     width:100%;
+    padding-top:12px;
+    border-top:1px solid var(--line);
   }
+  header nav a{ font-size:11px; }
 
   .intro{
     padding:36px 20px 28px;
@@ -571,10 +580,11 @@ footer button{
 @media (max-width:700px){
   .about-wrap{
     grid-template-columns:1fr;
-    padding:32px 20px 50px;
-    gap:32px;
+    padding:28px 22px 50px;
+    gap:28px;
   }
   .about-photo{ max-width:100%; }
+  .about-photo img{ max-width:180px; }
   .about-bio h1{ margin-bottom:16px; }
   .about-bio .current{ font-size:13px; }
   .about-col h4{ margin-bottom:10px; }
