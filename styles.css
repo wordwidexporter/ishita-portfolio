@@ -491,7 +491,7 @@ footer button{
   margin:0 auto;
   padding:60px 28px 100px;
   display:grid;
-  grid-template-columns:200px 340px 1fr 260px;
+  grid-template-columns:200px 180px 1fr 260px;
   gap:60px;
 }
 
@@ -523,7 +523,7 @@ footer button{
 }
 
 .about-photo{
-  width:180px;
+  width:100%;
 }
 .about-photo img{
   width:100%;
