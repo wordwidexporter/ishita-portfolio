@@ -1,12 +1,5 @@
-/* VERSION: about-page-fix-v15 */
-@font-face{
-  font-family:'Cormorant';
-  src:url('assets/fonts/cormorant-regular.woff2') format('woff2');
-  font-weight:400;
-  font-style:normal;
-  font-display:swap;
-}
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+/* VERSION: about-page-fix-v19 */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&display=swap');
 
 :root{
@@ -39,6 +32,7 @@ header{
   justify-content:space-between;
   align-items:center;
   padding:18px 28px;
+  font-family:'Space Grotesk', sans-serif;
   font-size:11px;
   letter-spacing:0.06em;
   text-transform:uppercase;
@@ -46,7 +40,7 @@ header{
   position:sticky; top:0; background:var(--bg); z-index:10;
 }
 header nav{display:flex; gap:22px;}
-header nav a{opacity:0.75; color:var(--ink); text-decoration:none;}
+header nav a{opacity:0.75; color:#040000; text-decoration:none; font-weight:700;}
 header nav a:hover{opacity:1;}
 header > div:first-child{ font-weight:600; }
 header > div:first-child a{ color:#040000; text-decoration:none; }
@@ -186,7 +180,6 @@ header > div:first-child a{ color:#040000; text-decoration:none; }
 }
 
 .quote-block{
-  background:#2a2622 url('assets/bg-asset.jpg') center/cover no-repeat;
   color:#ece7dc;
   padding:60px 40px;
   font-family:'Playfair Display', serif;
@@ -195,6 +188,12 @@ header > div:first-child a{ color:#040000; text-decoration:none; }
   line-height:1.25;
   text-align:center;
 }
+.quote-block img.bg-full{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
 .quote-block .brand{
   font-size:11px; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:18px; opacity:0.8;
 }
@@ -519,14 +518,14 @@ footer button{
 .about-wrap{
   max-width:1400px;
   margin:0 auto;
-  padding:60px 40px 100px;
+  padding:44px 40px 70px;
   display:grid;
   grid-template-columns:clamp(140px,12vw,200px) clamp(220px,20vw,300px) minmax(300px,1fr) clamp(170px,16vw,220px);
   gap:clamp(16px,2.2vw,30px);
 }
 
 .about-col h4{
-  font-family:'Cormorant', sans-serif;
+  font-family:'Space Grotesk', sans-serif;
   font-size:11px;
   letter-spacing:0.1em;
   text-transform:uppercase;
@@ -537,21 +536,19 @@ footer button{
 .about-col + .about-col{ margin-top:0; }
 
 .about-links{
-  margin-bottom:44px;
+  margin-bottom:34px;
 }
 .about-links a,
 .about-links p{
   display:block;
-  font-family:'Cormorant', 'Playfair Display', serif;
-  font-size:16px;
-  line-height:1.7;
+  font-family:'Libre Caslon Text', serif;
+  font-size:13px;
+  line-height:1.8;
   color:var(--ink);
+  font-variant-numeric:lining-nums;
 }
 .about-links a{
   text-decoration:none;
-}
-.phone-number{
-  font-family:'Libre Caslon Text', serif;
 }
 .about-links a:hover{
   text-decoration:underline;
@@ -575,7 +572,7 @@ footer button{
 .about-bio h1{
   font-family:'Playfair Display', serif;
   font-weight:400;
-  font-size:28px;
+  font-size:23px;
   line-height:1.32;
   margin-bottom:26px;
   max-width:none;
@@ -584,8 +581,8 @@ footer button{
   font-style:italic;
 }
 .about-bio .current{
-  font-family:'Cormorant', 'Playfair Display', serif;
-  font-size:18px;
+  font-family:'Libre Caslon Text', serif;
+  font-size:14px;
   line-height:1.6;
 }
 
@@ -593,16 +590,16 @@ footer button{
   margin-bottom:6px;
 }
 .talks-list .venue{
-  font-family:'Cormorant', 'Playfair Display', serif;
+  font-family:'Libre Caslon Text', serif;
   font-weight:400;
-  font-size:18px;
-  line-height:1.5;
+  font-size:13px;
+  line-height:1.4;
   display:block;
 }
 .talks-list .detail{
-  font-family:'Cormorant', 'Playfair Display', serif;
-  font-size:15px;
-  line-height:1.5;
+  font-family:'Libre Caslon Text', serif;
+  font-size:14px;
+  line-height:1.4;
   display:block;
 }
 
