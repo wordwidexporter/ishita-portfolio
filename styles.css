@@ -55,7 +55,7 @@ header > div:first-child a{ color:#040000; text-decoration:none; }
   font-size:2.1vw;
   font-weight:400;
   line-height:1.3;
-  max-width:600px;
+  max-width:700px;
 }
 .intro .plus{
   display:inline-block;
@@ -78,7 +78,7 @@ header > div:first-child a{ color:#040000; text-decoration:none; }
 .col-stack-top{
   display:flex;
   flex-direction:column;
-  gap:35px;
+  gap:70px;
 }
 
 .col-stack{
@@ -114,7 +114,6 @@ header > div:first-child a{ color:#040000; text-decoration:none; }
   opacity:1;
 }
 
-/* Wordmark blocks */
 .wordmark{
   font-family:'Playfair Display', serif;
   font-weight:900;
@@ -464,7 +463,7 @@ footer button{
     padding:36px 20px 28px;
     max-width:100%;
   }
-  .intro p{ font-size:14px; }
+  .intro p{ font-size:14px; max-width:100%; }
 
   .wrap{ padding:0 20px 60px; }
 
