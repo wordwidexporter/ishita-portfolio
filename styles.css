@@ -78,13 +78,13 @@ header > div:first-child a{ color:#040000; text-decoration:none; }
 .col-stack-top{
   display:flex;
   flex-direction:column;
-  gap:102px;
+  gap:35px;
 }
 
 .col-stack{
   display:flex;
   flex-direction:column;
-  gap:32px;
+  gap:0;
 }
 .grid.cols-3{grid-template-columns:1fr 1fr 1fr;}
 .full{grid-column:1 / -1;}
