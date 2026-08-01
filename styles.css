@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap');
+/* VERSION: about-page-fix-v14 */
+@font-face{
+  font-family:'Cormorant';
+  src:url('assets/fonts/cormorant-regular.woff2') format('woff2');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&display=swap');
 
 :root{
   --bg:#f3f1ec;
@@ -39,16 +48,18 @@ header{
 header nav{display:flex; gap:22px;}
 header nav a{opacity:0.75; color:var(--ink); text-decoration:none;}
 header nav a:hover{opacity:1;}
-header > div:first-child{ font-weight:700; }
-header > div:first-child a{ color:var(--ink); text-decoration:none; }
+header > div:first-child{ font-weight:600; }
+header > div:first-child a{ color:#040000; text-decoration:none; }
 
 .intro{
-  padding:60px 28px 40px;
-  max-width:520px;
+  padding:60px 28px 110px;
+  max-width:600px;
 }
 .intro p{
-  font-size:15px;
-  line-height:1.5;
+  font-family:'Libre Caslon Text', serif;
+  font-size:2.1vw;
+  font-weight:400;
+  line-height:1.3;
 }
 .intro .plus{
   display:inline-block;
@@ -64,8 +75,20 @@ header > div:first-child a{ color:var(--ink); text-decoration:none; }
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:14px;
-  margin-bottom:14px;
+  gap:32px;
+  margin-bottom:32px;
+}
+
+.col-stack-top{
+  display:flex;
+  flex-direction:column;
+  gap:102px;
+}
+
+.col-stack{
+  display:flex;
+  flex-direction:column;
+  gap:32px;
 }
 .grid.cols-3{grid-template-columns:1fr 1fr 1fr;}
 .full{grid-column:1 / -1;}
@@ -86,11 +109,13 @@ header > div:first-child a{ color:var(--ink); text-decoration:none; }
 }
 
 .caption{
-  font-size:10.5px;
-  line-height:1.4;
-  margin-top:8px;
-  max-width:340px;
-  opacity:0.8;
+  font-family:'Libre Caslon Text', serif;
+  font-size:12px;
+  line-height:1.5;
+  margin-top:5px;
+  max-width:640px;
+  color:#5a564e;
+  opacity:1;
 }
 
 /* Wordmark blocks */
@@ -104,7 +129,9 @@ header > div:first-child a{ color:var(--ink); text-decoration:none; }
   padding:18px 4px;
 }
 .wordmark.balboste{
-  font-size:clamp(72px, 8.5vw, 150px);
+  font-family:'Libre Caslon Text', serif;
+  font-weight:700;
+  font-size:clamp(64px, 7.5vw, 130px);
   line-height:0.88;
   white-space:nowrap;
 }
@@ -176,8 +203,9 @@ header > div:first-child a{ color:var(--ink); text-decoration:none; }
 .aligre{
   font-family:'Playfair Display', serif;
   font-weight:700;
-  font-size:34px;
-  padding:20px 4px;
+  font-size:clamp(48px, 6.5vw, 96px);
+  line-height:1;
+  padding:10px 4px 16px;
 }
 
 .brush-up{
@@ -464,7 +492,7 @@ footer button{
 
   .wizzco{ font-size:28px; }
   .kefiz{ font-size:32px; }
-  .aligre{ font-size:26px; }
+  .aligre{ font-size:clamp(32px, 10vw, 56px); }
 
   .type-life{ grid-template-columns:repeat(2,1fr); }
 
@@ -489,34 +517,39 @@ footer button{
 .about-wrap{
   max-width:1400px;
   margin:0 auto;
-  padding:60px 28px 100px;
+  padding:60px 40px 100px;
   display:grid;
-  grid-template-columns:200px 180px 1fr 260px;
-  gap:60px;
+  grid-template-columns:clamp(140px,12vw,200px) clamp(220px,20vw,300px) minmax(300px,1fr) clamp(170px,16vw,220px);
+  gap:clamp(16px,2.2vw,30px);
 }
 
 .about-col h4{
-  font-size:10.5px;
-  letter-spacing:0.08em;
+  font-family:'Cormorant', sans-serif;
+  font-size:11px;
+  letter-spacing:0.1em;
   text-transform:uppercase;
   font-weight:700;
-  margin-bottom:14px;
+  margin-bottom:18px;
   opacity:0.85;
 }
 .about-col + .about-col{ margin-top:0; }
 
 .about-links{
-  margin-bottom:36px;
+  margin-bottom:44px;
 }
 .about-links a,
 .about-links p{
   display:block;
-  font-size:14px;
+  font-family:'Cormorant', 'Playfair Display', serif;
+  font-size:16px;
   line-height:1.7;
   color:var(--ink);
 }
 .about-links a{
   text-decoration:none;
+}
+.phone-number{
+  font-family:'Libre Caslon Text', serif;
 }
 .about-links a:hover{
   text-decoration:underline;
@@ -527,8 +560,7 @@ footer button{
 }
 .about-photo img{
   width:100%;
-  aspect-ratio:3/4;
-  object-fit:cover;
+  height:auto;
   display:block;
 }
 .about-photo .photo-credit{
@@ -541,35 +573,38 @@ footer button{
 .about-bio h1{
   font-family:'Playfair Display', serif;
   font-weight:400;
-  font-size:15px;
-  line-height:1.5;
-  margin-bottom:16px;
-  max-width:420px;
+  font-size:24px;
+  line-height:1.32;
+  margin-bottom:26px;
+  max-width:none;
 }
 .about-bio h1 .amp{
   font-style:italic;
 }
 .about-bio .current{
-  font-size:15px;
+  font-family:'Cormorant', 'Playfair Display', serif;
+  font-size:18px;
   line-height:1.6;
 }
 
 .talks-list .item{
-  margin-bottom:14px;
+  margin-bottom:6px;
 }
 .talks-list .venue{
-  font-weight:700;
-  font-size:14px;
+  font-family:'Cormorant', 'Playfair Display', serif;
+  font-weight:400;
+  font-size:18px;
   line-height:1.5;
   display:block;
 }
 .talks-list .detail{
-  font-size:14px;
+  font-family:'Cormorant', 'Playfair Display', serif;
+  font-size:15px;
   line-height:1.5;
   display:block;
 }
 
-@media (max-width:1100px){
+@media (max-width:1050px){
   .about-wrap{
     grid-template-columns:1fr 1fr;
     gap:40px;
@@ -584,12 +619,12 @@ footer button{
     gap:28px;
   }
   .about-photo{ max-width:100%; }
-  .about-photo img{ max-width:180px; }
-  .about-bio h1{ margin-bottom:16px; }
+  .about-photo img{ max-width:280px; }
+  .about-bio h1{ font-size:24px; margin-bottom:16px; }
   .about-bio .current{ font-size:13px; }
   .about-col h4{ margin-bottom:10px; }
   .about-links{ margin-bottom:26px; }
 }
 @media (max-width:480px){
-  .about-bio h1{ font-size:17px; }
+  .about-bio h1{ font-size:20px; }
 }

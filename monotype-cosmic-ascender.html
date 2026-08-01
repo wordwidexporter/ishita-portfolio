@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cosmic Ascender — Ishita Gupta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .project-header{
+    padding:54px 28px 0;
+    max-width:820px;
+  }
+  .project-header h1{
+    font-family:'Playfair Display', serif;
+    font-weight:400;
+    font-size:32px;
+    line-height:1.2;
+    margin-bottom:28px;
+  }
+  .project-header p{
+    font-size:14px;
+    line-height:1.55;
+    margin-bottom:6px;
+    max-width:700px;
+    opacity:0.85;
+  }
+  .project-header p.gap-after{
+    margin-bottom:20px;
+  }
+  .project-credits{
+    margin-top:24px;
+    font-size:13.5px;
+    line-height:1.75;
+    opacity:0.8;
+  }
+  .project-credits div{ display:block; }
+  .project-divider{
+    border:none;
+    border-top:1px solid var(--line);
+    margin:36px 28px 0;
+  }
+  .project-wrap{
+    max-width:1400px;
+    margin:0 auto;
+    padding:36px 28px 80px;
+  }
+  .project-full{
+    width:100%;
+    display:block;
+    object-fit:cover;
+    margin-bottom:10px;
+  }
+  .project-caption{
+    font-size:12px;
+    line-height:1.4;
+    opacity:0.65;
+    margin-bottom:28px;
+  }
+  .project-caption em{ font-style:italic; }
+
+  .project-columns{
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+  }
+  .project-columns .col{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+  }
+  .project-columns .col img{
+    width:100%;
+    display:block;
+    object-fit:cover;
+  }
+  .project-columns .col.stickers{
+    justify-content:flex-start;
+  }
+
+  @media (max-width:720px){
+    .project-header{ padding:36px 20px 0; }
+    .project-header h1{ font-size:24px; margin-bottom:20px; }
+    .project-header p{ font-size:13px; }
+    .project-wrap{ padding:26px 20px 60px; }
+    .project-divider{ margin:26px 20px 0; }
+    .project-columns{ flex-direction:column; }
+    .project-full{ min-height:200px !important; }
+    .project-columns img{ min-height:180px !important; }
+  }
+  @media (max-width:420px){
+    .project-header h1{ font-size:20px; }
+    .project-header p{ font-size:12.5px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div><a href="index.html">Ishita Gupta ✐ Creative Design</a></div>
+  <nav>
+    <a href="monotype-project.html">Monotype</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="project-header">
+  <h1>Transforming one of the world's biggest typographic libraries into a universe ☽</h1>
+
+  <p>In 2024, Monotype was a returning Platinum sponsor at Adobe MAX Miami, one of the world's biggest creativity conferences.</p>
+  <p>My team was responsible for designing the entire 20" x 30" booth, the activations and the merchandise. We built a concept for the campaign:</p>
+  <p class="gap-after">a universe of type, where Monotype's library was transformed into constellations and stars, which viewers could navigate through a series of activations.</p>
+
+  <p>These included a custom machine, the <em>Cosmic Ascender</em>, which gave each viewer personalized font constellations based on users' star signs.</p>
+  <p class="gap-after">At the end a receipt was printed with their result.</p>
+
+  <p class="gap-after">The creative development was done by Kaleido Grafik.</p>
+
+  <div class="project-credits">
+    <div>Art Direction ✱ Monotype Design Team</div>
+    <div>Creative Development ⊙ Kaleido Grafik</div>
+    <div>Booth Build ◉ Catalyst Events</div>
+  </div>
+</div>
+
+<hr class="project-divider">
+
+<div class="project-wrap">
+
+  <div class="project-columns" style="margin-bottom:10px;">
+    <div class="col">
+      <img src="assets/cosmic-booth.webp" alt="" style="background:#141210; min-height:420px;">
+    </div>
+    <div class="col">
+      <img src="assets/cosmic-receipts.webp" alt="" style="background:#efece4; min-height:420px;">
+    </div>
+  </div>
+  <div class="project-columns" style="margin-bottom:28px;">
+    <div class="col"><p class="project-caption">Booth design, main wall — 2024.</p></div>
+    <div class="col"><p class="project-caption">Unique receipts from <em>Custom Ascender</em> — 2024.</p></div>
+  </div>
+
+  <div class="project-columns" style="margin-bottom:10px;">
+    <div class="col stickers">
+      <img src="assets/sticker-universe.png" alt="" style="width:auto; max-width:100%; height:auto;">
+    </div>
+    <div class="col">
+      <img src="assets/cosmic-social-post.webp" alt="" style="background:#141210; min-height:420px;">
+    </div>
+  </div>
+  <div class="project-columns" style="margin-bottom:28px;">
+    <div class="col"></div>
+    <div class="col"><p class="project-caption">Social post — 2024.</p></div>
+  </div>
+
+  <p class="project-caption">Merchandise — 2024.</p>
+
+</div>
+
+<footer>
+  <p>Subscribe</p>
+  <p style="opacity:0.65; max-width:420px; margin:0 auto 20px;">Sign up with your email address to receive news and updates.</p>
+  <div class="subscribe-row">
+    <input type="email" placeholder="Email address">
+    <button>Sign up for updates</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
